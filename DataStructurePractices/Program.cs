@@ -12,7 +12,7 @@ namespace DataStructurePractices
         {
             Console.WriteLine("Welcome to the Data Structure");
             Console.WriteLine("Choose the following");
-            Console.WriteLine("1.Generic LinkedList");
+            Console.WriteLine("1.Generic LinkedList\n4.CRUD Operation LinkedList");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -21,6 +21,10 @@ namespace DataStructurePractices
                     GenericLinkedList<string> genericLinkedList1 = new GenericLinkedList<string>("Raj", "Neha");
                     GenericLinkedList<double> generic = new GenericLinkedList<double>(45.5, 12.8);
                     genericLinkedList.CustomLinkedList(88,65);
+                    break;
+                case 4:
+                    CRUDLinkedList linkedList = new CRUDLinkedList();
+                    linkedList.Operations();
                     break;
             }
             Console.ReadLine();
