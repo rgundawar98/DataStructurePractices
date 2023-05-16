@@ -12,7 +12,8 @@ namespace DataStructurePractices
         {
             Console.WriteLine("Welcome to the Data Structure");
             Console.WriteLine("Choose the following");
-            Console.WriteLine("1.Generic LinkedList\n2.Generic Stack\n3.Generic Queue\n4.CRUD Operation LinkedList");
+            Console.WriteLine("1.Generic LinkedList\n2.Generic Stack\n3.Generic Queue\n4.CRUD Operation LinkedList\n5.CRUD" +
+                " Operation Stack");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -37,6 +38,10 @@ namespace DataStructurePractices
                 case 4:
                     CRUDLinkedList linkedList = new CRUDLinkedList();
                     linkedList.Operations();
+                    break;
+                case 5:
+                    CRUDStack stack = new CRUDStack();
+                    stack.Operations();
                     break;
 
             }
